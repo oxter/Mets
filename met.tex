@@ -1,0 +1,29 @@
+\documentclass[a4paper, russian]{article}
+\pagestyle{empty}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[cp1251]{inputenc}
+\usepackage{pscyr}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[left=25mm, right=1cm, top=2cm, bottom=2cm, bindingoffset=0cm]{geometry}
+\usepackage{eso-pic}
+\usepackage[tableposition=top]{caption}
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight]{Model}%
+\vfill
+}}}
+\newcommand{\braw}{\geqslant}
+\newcommand{\ruin}[1]{\text{\slshape{#1}}}
+\frenchspacing
+\AddToShipoutPicture{\BackgroundPic}
+\begin{document}
+\include{part1}
+\include{part2}
+\include{literatura}
+\end{document}
